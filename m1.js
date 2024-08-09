@@ -1,4 +1,3 @@
-1
-3rd commit
-4th commit
-6th commit
+const crypto = require('crypto');
+const jwtSecret = crypto.randomBytes(32).toString('hex');
+console.log(jwtSecret);
